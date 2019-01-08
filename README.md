@@ -9,7 +9,7 @@
 
 > **可以直接使用该脚本**
 
-
+`
   def hls_dir_to_mp4(in_path_dir, out_path_file):
     """
     将hls文件夹里面分片的视频转化为单个MP4文件
