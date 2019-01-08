@@ -35,3 +35,5 @@
     cmd = 'concat:' + "\"" + cmd + "\""
     cmd = 'ffmpeg -i ' + cmd + ' -acodec copy -vcodec copy -absf aac_adtstoasc ' + out_path_file
     execCmd(cmd)
+`
+## 2019.1.8
