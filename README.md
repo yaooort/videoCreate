@@ -1,7 +1,7 @@
 # videoCreate
 将腾讯视频缓存文件转换为.mp4
 
-> **腾讯视频mac版本下载的视频缓存目录为/Users/oort/Library/Containers/com.tencent.tenvideo/Data/Library/Application Support/Download/video/**
+> **腾讯视频mac版本下载的视频缓存目录为/Users/用户/Library/Containers/com.tencent.tenvideo/Data/Library/Application Support/Download/video/**
 
 > **将其文件夹下视频文件.dt进行合并为单个MP4文件**
 
