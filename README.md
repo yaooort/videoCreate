@@ -37,3 +37,8 @@
     execCmd(cmd)
 ```
 ## 2019.1.8
+
+### 使用方式
+- 1.```pipenv install```
+- 2.```pipenv shell```
+- 3.```python tencent_video.py /Users/用户/Library/Containers/com.tencent.tenvideo/Data/Library/Application Support/Download/video/g00208rhr0m.320092.hls out.mp4```
