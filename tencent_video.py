@@ -1,4 +1,4 @@
-import os
+import os,sys
 import logging
 from ffmpy import FFmpeg
 from natsort import natsorted
@@ -32,7 +32,7 @@ def hls_dir_to_mp4(in_path_dir, out_path_file):
     print(out_files)
     cmd = 'concat:' + "\"" + cmd + "\""
     cmd = 'ffmpeg -i ' + cmd + ' -acodec copy -vcodec copy -absf aac_adtstoasc ' + out_path_file
-    execCmd(cmd)
+    print(execCmd(cmd))
 
 
 def videoCurv():
@@ -55,6 +55,13 @@ def execCmd(cmd):
 
 
 if __name__ == '__main__':
-    hls_dir_to_mp4(
-        in_path_dir='/Users/bunny/Library/Containers/com.tencent.tenvideo/Data/Library/Application Support/Download/video/g00208rhr0m.320092.hls',
-        out_path_file='1.mp4');
+    print(sys.argv)
+    if len(sys.argv) == 3:
+        hls_dir_to_mp4(sys.argv[1], sys.argv[2])
+    elif len(sys.argv) > 1:
+        hls_dir_to_mp4(sys.argv[1], 'tmp.mp4')
+    else:
+        print('请输入视频所在目录path')
+    # hls_dir_to_mp4(
+    #     in_path_dir='/Users/bunny/Library/Containers/com.tencent.tenvideo/Data/Library/Application Support/Download/video/g00208rhr0m.320092.hls',
+    #     out_path_file='1.mp4');
