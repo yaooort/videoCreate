@@ -9,7 +9,7 @@
 
 > **可以直接使用该脚本**
 
-`
+
   def hls_dir_to_mp4(in_path_dir, out_path_file):
     """
     将hls文件夹里面分片的视频转化为单个MP4文件
@@ -35,5 +35,5 @@
     cmd = 'concat:' + "\"" + cmd + "\""
     cmd = 'ffmpeg -i ' + cmd + ' -acodec copy -vcodec copy -absf aac_adtstoasc ' + out_path_file
     execCmd(cmd)
-`
+
 ## 2019.1.8
